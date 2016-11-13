@@ -9,7 +9,8 @@ html {
                 background-size: cover;
 }
 #heading {
-	color: #514e47;
+	color: white;
+	/*color: #514e47;*/
 	text-align: center;
 	font-size: 50px;
 }
@@ -18,4 +19,15 @@ html {
 	color: #c66701;
 	text-align: center;
 	margin: 20px;
+}
+#frame {
+	margin: auto;
+	width: 50%;
+	height: 50%;
+	background-color: rgba(0,0,0,0.5);
+	border: 2px, gray, solid;
+}
+button {
+	font-size: 24px;
+	box-shadow: 5px 5px 5px grey;
 }

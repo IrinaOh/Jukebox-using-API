@@ -11,7 +11,7 @@ function JukeBox(){
 
 //gets the tracks 
  	SC.get("/tracks",{    
- 		q: "mayer "   
+ 		q: "buble "   
  	}).then(function(response) {       
  		console.log( response );
  		_this.playlist = response;
@@ -38,6 +38,7 @@ function JukeBox(){
 		$('#genre').text(songInfo.genre);	
 		var releaseDate = (songInfo.release_month) + " / " + (songInfo.release_day) + " / " + (songInfo.release_year);
 		$('#release').text(releaseDate);
+		$('#artist').attr("src", songInfo.user.waveform_url);
 	}
 //goes back to the previous song
 	this.previous = function(){

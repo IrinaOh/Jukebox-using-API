@@ -2,6 +2,8 @@
 <html>
 	<head>
 		<title>JukeBox</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="jukebox.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script src="https://connect.soundcloud.com/sdk/sdk-3.1.2.js"></script>
@@ -11,20 +13,22 @@
 		</style>
 	</head>
 	<body>
-		<div id="heading">
-			<h1>Jukebox</h1>			
-			<button class="button" type="previous" id="previous">Previous</button>
-			<button class="button" type="play" id="play">Play</button>
-			<button class="button" type="pause" id="pause">Pause</button>
-			<button class="button" type="next" id="next">Next</button>
-    	</div>
-    	<div id="info">
-    		<img id="artwork"/>
-			<h2 id="song-title"></h2> 
-			<h4 id="song-description"></h4>
-			<h4 id="genre"></h4>
-			<h4 id="release"></h4>
-			<h4 id="artist"></h4>
+		<div id="frame">
+			<div id="heading">
+				<h1>Jukebox</h1>			
+				<button class="button" type="previous" id="previous"><i class="fa fa-step-backward"></i></button>
+				<button class="button" type="play" id="play"><i class="fa fa-play"></i></button>
+				<button class="button" type="pause" id="pause"><i class="fa fa-pause"></i></button>
+				<button class="button" type="next" id="next"><i class="fa fa-step-forward"></i></button>
+	    	</div>
+	    	<div id="info">
+	    		<img id="artwork"/>
+				<h2 id="song-title"></h2> 
+				<h4 id="song-description"></h4>
+				<h4 id="genre"></h4>
+				<h4 id="release"></h4>
+				<h4 id="artist"><a></a></h4>
+			</div>
 		</div>
 		<script src="jukebox.js"></script>
 	</body>
